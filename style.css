@@ -4,52 +4,72 @@
 GERAL
 */
 
-body {
+body, ul, li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
 	color: #4d4d4d;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+img {
+	max-width: 100%;
+	display: block;
 }
 
 h1, h2, h3 {
-	margin: 0;
+	margin: 0px;
 	font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
 	font-weight: bold;
 }
 
 nav {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
 	background-color: #4d4d4d;
-
 }
 
-nav > a {
-	text-decoration: none;
-	color: #f1f1f1;
-	font-weight: bold;
-	font-size: 28px;
-	font-family: Pacifico, serif;
-}
-
-nav ul {
-	list-style: none;
+.menu {
 	display: flex;
-	flex-direction: column;
-	padding: 0;
-	width: 100%;
+	 
 }
 
-nav ul li {
-	width: 100%;
+.menu li {
+	margin-left: 10px;
+
+}
+.menu li a {
+	display: block;
+	padding: 10px;
+	
+}
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 900px;
+	margin: 0 auto;
+	
+}
+.portfolio > div {
+	flex: 1 1 250px;
+	margin: 10px;
+}
+
+h2 {
 	text-align: center;
+	margin: 20px;
 }
-nav ul li a {
-	display: inline-block;
-	padding: 10px 0;
-	width: 100%;
-	text-decoration: none;
-	color: #f1f1f1;
-}
+
+
+
 
 /*
 NAV
