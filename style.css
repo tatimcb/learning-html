@@ -127,6 +127,24 @@ SOBRE
 }
 
 /*
+SERVIÇOS
+*/
+#servicos {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#servicos > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/*
 PORTFÓLIO
 */
 .portfolio {
@@ -144,4 +162,35 @@ PORTFÓLIO
 h2 {
 	text-align: center;
 	margin: 20px;
+}
+
+/*
+CONTATO
+*/
+
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+	
+}
+
+#contato img {
+	margin-left: 40px;
+}
+
+
+#contato a {
+	color: blue;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #4d4d4d;
+	color: #f1f1f1;
+
 }
