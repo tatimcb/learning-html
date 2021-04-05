@@ -179,7 +179,7 @@ CONTATO
 }
 
 #contato img {
-	margin-left: 40px;
+	margin: 0 auto;
 }
 
 
@@ -192,5 +192,83 @@ footer {
 	padding: 10px;
 	background-color: #4d4d4d;
 	color: #f1f1f1;
+
+}
+
+@media screen and (min-width: 768px) {
+	/*
+	NAVEGAÇÃO
+	*/
+	nav {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+	}
+	/*
+	CABEÇALHO
+	*/
+	header {
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+	/*
+	CABEÇALHO
+	*/
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+	/*
+	SERVIÇOS
+	*/
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+	#servicos > div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+	/*
+	PORTFOLIO
+	*/
+	#portfolio {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#portfolio h2 {
+		text-align: center;
+		width: 100%;
+	}
+	#portfolio img {
+		width: 33.33333333%;
+	}
+	/*
+	CONTATO
+	*/
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	#contato h2, p {
+		width: 100%;
+	}
 
 }
